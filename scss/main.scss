@@ -1,6 +1,6 @@
 @import "config";
 @import "menu";
-@import "mobile";
+
 
 * {
     box-sizing: border-box;
@@ -9,7 +9,7 @@
 body {
     @include background;
     background-color: $primary-color;
-    color: #fff;
+    color: set-text-color($primary-color);
     height: 100%;
     line-height: 1.5;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -34,7 +34,7 @@ h3 {
 }
 
 a {
-    color: #fff;
+    color: set-text-color($primary-color);
     text-decoration: none;
 }
 
@@ -50,7 +50,8 @@ header {
 
 main {
     padding: 4rem;
-    height: 100%;
+    // height: 100%;
+    min-height: calc(100vh - 60px);
 
     .icons {
         padding-top: 1rem;
@@ -73,4 +74,62 @@ main {
             margin-top: 20vh;
         }
     }
+
+    .about-info {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "bio-portrait bio bio"
+            "project1 project2 project3";
+        grid-gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bio-portrait {
+        grid-area: bio-portrait;
+        place-content: center;
+        margin: auto;
+
+        img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+        }
+    }
+
+    .bio {
+        grid-area: bio;
+        font-size: 1.5rem;
+    }
+
+    .project {
+        background-color: lighten($primary-color, $amount: 5);
+        padding: 1rem; 
+        border-radius: 5px;
+        border-bottom: $secondary-color 2px solid;
+
+        h6 {
+            color: $secondary-color;
+        }
+    }
+    .project-1 {
+        grid-area: project1;
+    }
+
+    .project-2 {
+        grid-area: project2;
+    }
+
+    .project-3 {
+        grid-area: project3;
+    }
 }
+
+#main-footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: darken($color: $primary-color, $amount: 10);
+    height: 60px;
+}
+
+@import "mobile";

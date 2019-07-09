@@ -1,4 +1,4 @@
-$primary-color: #444;
+$primary-color: #fff;
 $secondary-color: #38ce59;
 $show-home-image: true;
 $home-image: url("../images/coding.jpg");
@@ -26,6 +26,15 @@ $background-opacity: 0.8;
             background: rgba($primary-color, $background-opacity);
             z-index: -1;
         }
+    }
+}
+
+// set text color function
+@function set-text-color($color) {
+    @if(lightness($color) > 40) {
+        @return #000;
+    } @else {
+        @return #fff;
     }
 }
 
