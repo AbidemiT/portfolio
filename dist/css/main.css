@@ -15,7 +15,7 @@
       transform: rotate(-45deg) translate(6px, -6px); }
 
 .btn-line {
-  background-color: #000;
+  background-color: #fff;
   width: 25px;
   height: 3px;
   margin: 0 0 5px 0;
@@ -24,7 +24,7 @@
 
 .menu {
   width: 100%;
-  background-color: #fff;
+  background-color: #444;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -44,14 +44,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #f2f2f2;
+    background: #373737;
     list-style-type: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #fff;
+    background: #444;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -93,12 +93,28 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
+.btn, .btn-light, .btn-dark {
+  display: inline-block;
+  padding: 0.5rem 0.7rem;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0.5rem; }
+  .btn:hover, .btn-light:hover, .btn-dark:hover {
+    background: #38ce59;
+    color: #000; }
+
+.btn-light {
+  background: #c4c4c4; }
+
+.btn-dark {
+  background: black; }
+
 * {
   box-sizing: border-box; }
 
 body {
-  background-color: #fff;
-  color: #000;
+  background-color: #444;
+  color: #fff;
   height: 100%;
   line-height: 1.5;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -114,7 +130,7 @@ body {
     right: 0;
     height: 100%;
     width: 100%;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(68, 68, 68, 0.8);
     z-index: -1; }
 
 h1,
@@ -131,10 +147,10 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(255, 255, 255, 0.5); }
+    background: rgba(73, 73, 73, 0.5); }
 
 a {
-  color: #000;
+  color: #fff;
   text-decoration: none; }
 
 header {
@@ -178,7 +194,7 @@ main {
     grid-area: bio;
     font-size: 1.5rem; }
   main .project {
-    background-color: white;
+    background-color: #515151;
     padding: 1rem;
     border-radius: 5px;
     border-bottom: #38ce59 2px solid; }
@@ -191,11 +207,30 @@ main {
   main .project-3 {
     grid-area: project3; }
 
+#my-work .works {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.7rem; }
+  #my-work .works .work img {
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 3px; }
+    #my-work .works .work img:hover {
+      opacity: 0.7;
+      border-color: #38ce59;
+      transition: all 0.5s ease-out; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background-color: #e6e6e6;
+  background-color: #2b2b2b;
   height: 60px; }
+
+@media screen and (min-width: 1171px) {
+  #my-work .works {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.7rem; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -225,10 +260,20 @@ main {
     transform: translate3d(100%, 0, 0); }
     div.menu-branding .portrait {
       width: 150px;
-      height: 150px; } }
+      height: 150px; }
+  #my-work .works {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.7rem; } }
 
 @media screen and (max-width: 500px) {
+  main .lg-heading {
+    font-size: 3.5rem; }
   main#home {
     overflow: hidden; }
   main#home h1 {
-    margin-top: 10vh; } }
+    margin-top: 10vh; }
+  #my-work .works {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.7rem; } }

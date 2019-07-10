@@ -1,5 +1,6 @@
 @import "config";
 @import "menu";
+@import "button";
 
 
 * {
@@ -104,7 +105,7 @@ main {
 
     .project {
         background-color: lighten($primary-color, $amount: 5);
-        padding: 1rem; 
+        padding: 1rem;
         border-radius: 5px;
         border-bottom: $secondary-color 2px solid;
 
@@ -112,6 +113,7 @@ main {
             color: $secondary-color;
         }
     }
+
     .project-1 {
         grid-area: project1;
     }
@@ -124,6 +126,36 @@ main {
         grid-area: project3;
     }
 }
+
+#my-work {
+
+    .works {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0.7rem;
+
+        .work {
+
+            // a{
+            //     display: inline-block;
+            // } 
+
+            img {
+                width: 100%;
+                border: 2px solid #fff;
+                border-radius: 3px;
+
+                &:hover {
+                    opacity: 0.7;
+                    border-color: $secondary-color;
+                    @include easeOut;
+                }
+            }
+        }
+    }
+}
+
+
 
 #main-footer {
     text-align: center;
