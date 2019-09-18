@@ -1,6 +1,7 @@
 @import "config";
 @import "menu";
 @import "button";
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
 
 
 * {
@@ -13,7 +14,7 @@ body {
     color: set-text-color($primary-color);
     height: 100%;
     line-height: 1.5;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     margin: 0;
 }
 
