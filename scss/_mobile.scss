@@ -1,6 +1,8 @@
 // Widescreen
 @include mediaXl {
     #my-work {
+        padding: 2rem;
+
         .works {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -24,6 +26,7 @@
         align-items: center;
         text-align: center;
         overflow: hidden;
+        padding: 2rem;
 
         .lg-heading {
             line-height: 1;
@@ -69,6 +72,8 @@
     }
 
     #my-work {
+        padding: 2rem;
+
         .works {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -86,6 +91,8 @@
 // Smart phones
 @include mediaSm {
     main {
+        padding: 2rem;
+
         .lg-heading {
             font-size: 3.5rem;
         }
@@ -100,6 +107,8 @@
     }
 
     #my-work {
+        padding: 2rem;
+
         .works {
             display: grid;
             grid-template-columns: 1fr;

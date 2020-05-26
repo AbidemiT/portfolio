@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans&display=swap");
-
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -12,12 +11,12 @@
 
 .menu-btn.close {
   -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .menu-btn.close .btn-line:nth-child(1) {
   -webkit-transform: rotate(45deg) translate(5px, 5px);
-  transform: rotate(45deg) translate(5px, 5px);
+          transform: rotate(45deg) translate(5px, 5px);
 }
 
 .menu-btn.close .btn-line:nth-child(2) {
@@ -26,7 +25,7 @@
 
 .menu-btn.close .btn-line:nth-child(3) {
   -webkit-transform: rotate(-45deg) translate(6px, -6px);
-  transform: rotate(-45deg) translate(6px, -6px);
+          transform: rotate(-45deg) translate(6px, -6px);
 }
 
 .btn-line {
@@ -53,21 +52,20 @@
   visibility: visible;
 }
 
-.menu-branding,
-.menu-nav {
+.menu-branding, .menu-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   float: left;
   width: 50%;
   height: 100vh;
@@ -80,27 +78,27 @@
   background: #373737;
   list-style-type: none;
   -webkit-transform: translate3d(0, -100%, 0);
-  transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
 .menu-nav.show {
   -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 .menu-branding {
   background: #444;
   -webkit-transform: translate3d(0, 100%, 0);
-  transform: translate3d(0, 100%, 0);
+          transform: translate3d(0, 100%, 0);
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
 .menu-branding.show {
   -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 .menu-branding .portrait {
@@ -115,22 +113,22 @@
   height: 100%;
   border-radius: 50%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .menu .nav-item {
   -webkit-transform: translate3d(600px, 0, 0);
-  transform: translate3d(600px, 0, 0);
+          transform: translate3d(600px, 0, 0);
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
 .menu .nav-item.show {
   -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
-.menu .nav-item.active>a {
+.menu .nav-item.active > a {
   color: #38ce59;
 }
 
@@ -151,27 +149,25 @@
 
 .nav-item:nth-child(1) {
   -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s;
+          transition-delay: 0.1s;
 }
 
 .nav-item:nth-child(2) {
   -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
+          transition-delay: 0.2s;
 }
 
 .nav-item:nth-child(3) {
   -webkit-transition-delay: 0.3s;
-  transition-delay: 0.3s;
+          transition-delay: 0.3s;
 }
 
 .nav-item:nth-child(4) {
   -webkit-transition-delay: 0.4s;
-  transition-delay: 0.4s;
+          transition-delay: 0.4s;
 }
 
-.btn,
-.btn-light,
-.btn-dark {
+.btn, .btn-light, .btn-dark {
   display: inline-block;
   padding: 0.5rem 0.7rem;
   border-radius: 5px;
@@ -179,9 +175,7 @@
   margin: 0.5rem;
 }
 
-.btn:hover,
-.btn-light:hover,
-.btn-dark:hover {
+.btn:hover, .btn-light:hover, .btn-dark:hover {
   background: #38ce59;
   color: #000;
 }
@@ -196,7 +190,7 @@
 
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -253,7 +247,7 @@ a {
 
 img {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 header {
@@ -296,16 +290,16 @@ main#home h1 {
 main .about-info {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "bio-portrait bio bio"
-    "project1 project2 project3";
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: "bio-portrait bio bio" "project1 project2 project3";
   grid-gap: 20px;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main .bio-portrait {
@@ -359,16 +353,21 @@ main .project-3 {
   grid-area: project3;
 }
 
+#my-work {
+  padding: 2rem;
+}
+
 #my-work .works {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.7rem;
 }
 
 #my-work .works .work:hover {
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #my-work .works .work img {
@@ -392,112 +391,108 @@ main .project-3 {
 }
 
 @media screen and (min-width: 1171px) {
+  #my-work {
+    padding: 2rem;
+  }
   #my-work .works {
     display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
     grid-gap: 0.7rem;
   }
-
   #my-work .works .work:hover {
     -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 
 @media screen and (max-width: 768px) {
   main {
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     overflow: hidden;
+    padding: 2rem;
   }
-
   main .lg-heading {
     line-height: 1;
     margin-bottom: 1rem;
   }
-
   main .about-info {
-    grid-template-areas: "bio-portrait"
-      "bio"
-      "project1"
-      "project2"
-      "project3";
+        grid-template-areas: "bio-portrait" "bio" "project1" "project2" "project3";
     -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
   }
-
   ul.menu-nav,
   div.menu-branding {
     width: 100%;
     float: none;
     min-height: 0;
   }
-
   ul.menu-nav.show,
   div.menu-branding.show {
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
-
   ul.menu-nav {
     height: 70vh;
     -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
     font-size: 24px;
   }
-
   div.menu-branding {
     height: 30vh;
     -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
   }
-
   div.menu-branding .portrait {
     width: 150px;
     height: 150px;
   }
-
+  #my-work {
+    padding: 2rem;
+  }
   #my-work .works {
     display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
     grid-gap: 0.7rem;
   }
-
   #my-work .works .work:hover {
     -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 
 @media screen and (max-width: 500px) {
+  main {
+    padding: 2rem;
+  }
   main .lg-heading {
     font-size: 3.5rem;
   }
-
   main#home {
     overflow: hidden;
   }
-
   main#home h1 {
     margin-top: 10vh;
   }
-
+  #my-work {
+    padding: 2rem;
+  }
   #my-work .works {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     grid-gap: 0.7rem;
   }
-
   #my-work .works .work:hover {
     -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
-
 /*# sourceMappingURL=main.css.map */
