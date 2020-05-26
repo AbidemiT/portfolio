@@ -5,6 +5,12 @@
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-gap: 0.7rem;
+
+            .work {
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
         }
     }
 }
@@ -67,6 +73,12 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 0.7rem;
+
+            .work {
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
         }
     }
 }
@@ -92,6 +104,12 @@
             display: grid;
             grid-template-columns: 1fr;
             grid-gap: 0.7rem;
+
+            .work {
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
         }
     }
 }
