@@ -1,15 +1,15 @@
 {
   "name": "devabidemi",
   "version": "1.0.0",
-  "description": "",
+  "description": "Tiamiyu Sikiru Abidemi Portfolio Website",
   "main": "index.js",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["web developer", "Frontend Developer", "Javascrip", "Vue", "React"],
+  "author": "Tiamiyu Sikiru Abidemi",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.14.1"
   }
 }
