@@ -1,0 +1,72 @@
+@import "./mixins";
+@import "./variables";
+@import "./nav";
+@import "./landing";
+@import "./projects";
+
+
+@font-face {
+    font-family: "DINBold";
+    src: url("../fonts/Din/DIN-Pro-Black-900.otf") format("opentype");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "DINRegular";
+    src: url("../fonts/Din/DIN-Pro-Light.otf") format("opentype");
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DINRegular";
+    margin: 0;
+    padding: 0;
+    line-height: 140%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p,
+div {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "DINBold";
+}
+
+.bounce-2 {
+    animation-name: bounce-2;
+    animation-timing-function: ease;
+}
+
+@keyframes bounce-2 {
+    0% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}

@@ -1,0 +1,185 @@
+.top-nav {
+    .social-links {
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        h4 {
+            font-style: italic;
+        }
+
+        .links {
+            a {
+                margin-left: 3px;
+
+                i {
+                    font-size: 2rem;
+
+                    &.github {
+                        color: $github-color;
+                    }
+
+                    &.facebook {
+                        color: $facebook-color;
+                    }
+
+                    &.twitter {
+                        color: $twitter-color;
+                    }
+
+                    &.linkedin {
+                        color: $linkedin-color;
+                    }
+
+                    &.dev {
+                        color: $dev-color;
+                    }
+
+                    &.instagram {
+                        color: $instagram-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include md {
+    .top-nav {
+        .social-links {
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            h4 {
+                font-style: italic;
+            }
+
+            .links {
+                a {
+                    margin-left: 3px;
+
+                    i {
+                        font-size: 2rem;
+
+                        &.github {
+                            color: $github-color;
+                        }
+
+                        &.facebook {
+                            color: $facebook-color;
+                        }
+
+                        &.twitter {
+                            color: $twitter-color;
+                        }
+
+                        &.linkedin {
+                            color: $linkedin-color;
+                        }
+
+                        &.dev {
+                            color: $dev-color;
+                        }
+
+                        &.instagram {
+                            color: $instagram-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include ipad {
+    .top-nav {
+        .social-links {
+            padding: 15px 20px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            .links {
+                a {
+                    margin-left: 10px;
+
+                    i {
+                        font-size: 2rem;
+
+                        &.github {
+                            color: $github-color;
+                        }
+
+                        &.facebook {
+                            color: $facebook-color;
+                        }
+
+                        &.twitter {
+                            color: $twitter-color;
+                        }
+
+                        &.linkedin {
+                            color: $linkedin-color;
+                        }
+
+                        &.dev {
+                            color: $dev-color;
+                        }
+
+                        &.instagram {
+                            color: $instagram-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include lg {
+    .top-nav {
+        .social-links {
+            padding: 15px 20px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            .links {
+                a {
+                    margin-left: 10px;
+
+                    i {
+                        font-size: 2rem;
+
+                        &.github {
+                            color: $github-color;
+                        }
+
+                        &.facebook {
+                            color: $facebook-color;
+                        }
+
+                        &.twitter {
+                            color: $twitter-color;
+                        }
+
+                        &.linkedin {
+                            color: $linkedin-color;
+                        }
+
+                        &.dev {
+                            color: $dev-color;
+                        }
+
+                        &.instagram {
+                            color: $instagram-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
